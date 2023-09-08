@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .svetafor {
+            width: 200px;
+            height: 650px;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 8px;
+        }
+
+        .svetafor>div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            /* outline: 2px solid rgb(100, 100, 100); */
+        }
+
+        .svetafor>div>h5 {
+            font-size: 124px;
+            font-weight: 100;
+            color: rgb(62, 68, 73);
+        }
+
+        .svetafor .red {
+            background-color: #cc3232;
+            box-shadow: 0 0 48px 8px #cc3232;
+        }
+
+        .svetafor .yellow {
+            background-color: rgba(252, 248, 0, 0.1);
+            /* background: radial-gradient( white, yellow); */
+        }
+
+        .svetafor .green {
+            background-color: rgba(21, 252, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="svetafor">
+        <div class="red">
+            <h5 id="redNumber"></h5>
+        </div>
+        <div class="yellow"></div>
+        <div class="green"></div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
